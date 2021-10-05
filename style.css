@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+
+    width: 100%;
+    background-color: yellow;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding: 6%;
+    
+    /* margin: 20px auto; */
+    position: relative;
+}
+nav a.icon{
+    /* background-color:tomato ; */
+    /* background: turquoise; */
+    
+    position: absolute;
+
+    right: 0;
+    top: 0;
+}
+nav a{
+    display: block;
+    color: orange;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    /* line-height: 20px; */
+    padding: 15px 0;
+
+}
+nav #mylink{
+    width: 100%;
+    display: none;
+    /* margin: 10px; */
+    margin-top: 30px;
+    background-color: green;
+    border-radius: 5px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+nav>button{
+    display: none;
+}
+nav a.icon{
+    margin: 20px;
+    display: block;
+    width: 10%;
+
+}
+nav a{
+
+}
+.hero{
+    /* background-color: hotpink; */
+    width: 100%;
+}
+.hero-content-1 {
+    width: 100%;
+    background-image: url(images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 70px;
+    /* background-color: khaki; */
+
+}
+.hero-content-1 img{
+    width: 90%;
+    margin-top: -32%;
+display: block;
+margin-left:auto ;
+margin-right: auto;
+margin-bottom: -10;
+}
+
+.hero-content {
+    /* background-color: lightsalmon; */
+    
+}
+.hero-content header{
+    font-size: 65px;
+    text-align: center;
+    font-weight: 600;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px auto 20px auto;
+    line-height: 5rem;
+    color: #333333;
+}
+.hero-content,
+.choose-bank p{
+    /* background-color: mediumpurple; */
+    width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #808080;
+}
+.hero-content button{
+    width: 40%;
+    background-image: linear-gradient( 135deg,#00cc00,#38e0cf);
+    /* background-color: linear; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 25px 20px 25px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 35px;
+    /* text-align: center; */
+}
+.hero-button{
+    background-color: olive;
+    align-content: center;
+    width: 100%;
+    margin-top: 15%;
+}
+.choose-bank{
+    margin-top: 30%;
+}
+.choose-bank header{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    width: 40%;
+    background-color: orchid;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px auto 20px auto;
+    line-height: 3rem;
+    color: #333333;
+}
+.Online-Banking header{
+    
+}
