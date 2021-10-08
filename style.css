@@ -288,15 +288,15 @@ footer section {
     justify-content: center;
 }
 footer>section>.logo{
-/* background-color: deeppink; */
-    width:70%;
+background-color: deeppink;
+    width:100%;
     align-self: center;
     display: flex;
 
 }
 footer>section>.logo>svg {
-    width: 50%;
-    /* background-color: deepskyblue; */
+    width: auto;
+    background-color: deepskyblue;
     align-self: center;
     margin: 40px auto 30px auto;
     color: hsl(0, 0%, 100%);
