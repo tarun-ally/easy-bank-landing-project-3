@@ -288,7 +288,8 @@ footer section {
     justify-content: center;
 }
 footer>section>.logo{
-    width:30%;
+/* background-color: deeppink; */
+    width:35%;
     align-self: center;
 
 }
