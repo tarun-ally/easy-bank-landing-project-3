@@ -288,7 +288,7 @@ footer section {
     justify-content: center;
 }
 footer>section>.logo{
-background-color: deeppink;
+/* background-color: deeppink; */
     width:100%;
     align-self: center;
     display: flex;
@@ -296,7 +296,7 @@ background-color: deeppink;
 }
 footer>section>.logo>svg {
     width: auto;
-    background-color: deepskyblue;
+    /* background-color: deepskyblue; */
     align-self: center;
     margin: 40px auto 30px auto;
     color: hsl(0, 0%, 100%);
