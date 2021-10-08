@@ -289,12 +289,15 @@ footer section {
 }
 footer>section>.logo{
 /* background-color: deeppink; */
-    width:35%;
+    width:70%;
     align-self: center;
+    display: flex;
 
 }
 footer>section>.logo>svg {
-    width: 100%;
+    width: 50%;
+    /* background-color: deepskyblue; */
+    align-self: center;
     margin: 40px auto 30px auto;
     color: hsl(0, 0%, 100%);
 }
