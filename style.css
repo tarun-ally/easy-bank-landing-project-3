@@ -637,6 +637,8 @@ footer .wrapper-link a {
     }
 
     footer section .logo svg {
+        /* background-color: dodgerblue; */
+width: 100%;
         margin: 0 0 20px 0;
     }
 
