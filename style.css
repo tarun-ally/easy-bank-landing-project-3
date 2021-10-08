@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
 }
 
 body {
@@ -9,43 +9,42 @@ body {
 }
 
 nav {
-
     width: 100%;
     background-color: hsl(0, 0%, 100%);
     padding: 6%;
-
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 nav a.icon {
-
     position: absolute;
-
     right: 0;
     top: 0;
 }
 
 nav a {
     display: block;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
+    color: #282828;
+    font-family: 'Public Sans', sans-serif;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1rem;
     text-align: center;
     padding: 10px 0;
+    position: relative;
 
 }
 
 nav #mylink {
-
-    width: 100%;
+    width: 80%;
     display: none;
     margin-top: 30px;
-    /* background-color: brown; */
-
-    background-color: hsl(0, 0%, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
     border-radius: 5px;
+    /* background-color: yellow; */
 }
 
 nav>button {
@@ -56,14 +55,10 @@ nav a.icon {
     margin: 20px;
     display: block;
     width: 10%;
-
 }
 
-/* hero section */
-
-
 .hero {
-    width: 100vw;
+    width: 100%;
 }
 
 .hero-image {
@@ -71,29 +66,22 @@ nav a.icon {
     background-image: url(images/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: 55px;
-    /* background-color: khaki; */
+    overflow: hidden;
 
 }
 
 .hero-image img {
     width: 90%;
-    margin-top: -32%;
+    margin-top: -15%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -10;
-}
-
-.hero-content {
-    /* background-color: lightsalmon; */
-
 }
 
 .hero-content header {
     font-size: 2.5rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 300;
     width: 90%;
     margin: 15px auto 20px auto;
     line-height: 3rem;
@@ -102,22 +90,26 @@ nav a.icon {
 
 .hero-content,
 .choose-bank p {
-    /* background-color: mediumpurple; */
     width: 85%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.7rem;
     color: #808080;
+}
+
+.hero-button {
+    align-content: center;
+    width: 100%;
+    margin-top: 35px;
 }
 
 .hero-content button,
 .end-footer button {
     width: 50%;
-    background-image: linear-gradient(135deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    /* background-color: linear; */
+    background: linear-gradient(135deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     margin-left: auto;
     margin-right: auto;
     padding: 20px 25px 20px 25px;
@@ -126,38 +118,31 @@ nav a.icon {
     border: none;
     border-radius: 35px;
     color: hsl(0, 0%, 100%);
-    /* text-align: center; */
 }
 
-.hero-button {
-    /* background-color: olive; */
-    align-content: center;
-    width: 100%;
-    margin-top: 35px;
-}
 
 .choose-bank {
     margin-top: 100px;
-    /* background-color: sienna; */
 }
 
 .choose-bank header h1,
 .wrapper header h1 {
     font-size: 2rem;
     text-align: center;
-    font-weight: 700;
     width: 60%;
-    /* background-color: orchid; */
     margin-left: auto;
     margin-right: auto;
-    margin: 10px auto 20px auto;
+    margin: -30px auto 20px auto;
     line-height: 2.5rem;
     color: #333333;
 }
 
 /* container-1 */
 .container-1 {
-    background-color: hsl(220, 16%, 96%)
+    background-color: hsl(220, 16%, 96%);
+    margin: 90px 0 0 0;
+    padding: 10px 0 70px 0;
+
 }
 
 .Online-Banking,
@@ -167,7 +152,6 @@ nav a.icon {
     width: 90%;
 
     text-align: center;
-    /* background-color: brown; */
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
@@ -179,64 +163,59 @@ nav a.icon {
 .Open-API img {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 
 }
-
-
 
 .Online-Banking p,
 .Simple-Budgeting p,
 .Fast-Onboarding p,
 .Open-API p {
-    /* background-color: salmon; */
     margin-top: 30px;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 1.5rem;
     color: #9f9393;
 }
-
 
 .Online-Banking header,
 .Simple-Budgeting header,
 .Fast-Onboarding header,
 .Open-API header {
-    /* background-color: red; */
     font-size: 1.5rem;
-    font-weight: 700;
     margin: 10px;
     color: #404040;
 }
 
-
 /*------------------------- latest article------------------------------- */
-
 .wrapper {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: sandybrown; */
     margin-top: 150px;
 }
 
-.currency img,
-.restaurant img,
-.plane img,
-.confetti img {
+.currency-content,
+.restaurant-content,
+.plane-content,
+.confetti-content {
+    width: 80%;
+    margin: 40px auto 80px auto;
+}
+
+.article-image img {
     width: 100%;
     border-radius: .5rem .5rem 0 0;
-    background-color: tomato;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .currency-content h6,
 .restaurant-content h6,
 .plane-content h6,
 .confetti-content h6 {
-    /* background-color: springgreen; */
-    font-size: small;
-    font-weight: 700;
+    font-size: 0.7rem;
     color: #999999;
     margin-bottom: 16px;
 
@@ -246,79 +225,82 @@ nav a.icon {
 .restaurant-content header h3,
 .plane-content header h3,
 .confetti-content header h3 {
-    /* background-color: springgreen; */
-    font-size: 20px;
-    font-weight: 700;
+    width: 93%;
+    font-size: 1rem;
     color: #404040;
     margin-bottom: 16px;
 
+}
+
+.currency-content header h3:hover,
+.restaurant-content header h3:hover,
+.plane-content header h3:hover,
+.confetti-content header h3:hover {
+    width: 93%;
+    font-size: 1rem;
+    color: hsl(136, 65%, 51%);
+    margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .currency-content p,
 .restaurant-content p,
 .plane-content p,
 .confetti-content p {
-    /* background-color: springgreen; */
-    /* font-size: ; */
-    font-weight: 900;
+    font-size: 0.9rem;
     color: #b3b3b3;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     margin-bottom: 16px;
-
-}
-
-.currency-content,
-.restaurant-content,
-.plane-content,
-.confetti-content {
-    width: 75%;
-    margin: 40px auto 80px auto;
 }
 
 /* footer */
 footer {
-    /* align-items: center; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: hsl(233, 26%, 24%);
 }
 
-footer svg {
-    /* width: 100%; */
-    margin: 40px auto 0 auto;
-    /* background-color: chartreuse; */
+footer section {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer>section>.logo>svg {
+    align-self: center;
+    margin: 40px auto 30px 130px;
     color: hsl(0, 0%, 100%);
 }
 
+
+
 footer .container {
-    width: 55%;
-    /* size: 100px; */
+    width: 45%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto 0 auto;
     padding-bottom: 40px;
-    /* background-color: coral; */
 }
 
-footer .wrapper {
+footer .wrapper-link {
     align-self: center;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: -10px;
     line-height: 1.5rem;
-
 }
 
-footer .wrapper a {
+footer .wrapper-link a {
     margin-top: 10px;
     margin-bottom: 20px;
     text-decoration: none;
-
     color: hsl(0, 0%, 100%);
     border: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
     font-weight: bolder;
 }
 
@@ -327,22 +309,19 @@ footer .wrapper a {
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
-    /* background-color: thistle; */
 }
 
 .end-footer p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
     text-align: center;
     margin: 30px 0 40px 0;
-    /* background-color: yellow; */
     color: hsl(233, 8%, 62%);
     font-weight: bolder;
 }
 
 .attribution {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Public Sans', sans-serif;
     text-align: center;
-    /* background-color: violet; */
     color: hsl(0, 0%, 100%);
 }
 
@@ -352,56 +331,366 @@ footer .wrapper a {
 }
 
 /* .................desktop view........................................................ */
-/* 
-@media (min-width: 376px) and (max-width: 1440px) {
+
+@media (min-width: 700px) and (max-width: 1440px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
 
     nav {
         width: 100%;
         display: flex;
-        padding: 0;
+        padding: 0 150px 0 0;
         justify-content: space-around;
-        position: absolute;
-        top: 0;
-        background-color: cornflowerblue;
+        z-index: 6;
     }
 
     nav a.icon {
         display: none;
     }
-    nav>svg{
-        background-color: cyan;
-        margin: auto 0 auto 0;
+
+    nav>svg {
+        margin: auto auto auto 150px;
     }
+
     nav #mylink {
-        background-color: crimson;
         align-self: center;
         padding: 10px 0 10px 0;
-        margin:auto 0 auto 0 ;
-       
+        margin: auto 0 auto 0;
         display: flex;
-        width: 30%;
+        width: 27%;
         justify-content: space-between;
-
     }
-
+    nav #mylink a:after {
+        content: "";
+        position: absolute;
+        background-color: hsl(136, 65%, 51%);
+        height: 5px;
+        width: 0;
+        left: 0;
+        bottom: -21px;
+        
+    
+    }
+    
+    nav #mylink a:hover:after {
+        width: 100%;
+        border-bottom: turquoise;
+    }
     nav a {
         font-size: 0.8rem;
-        color:hsl(233, 8%, 62%)
+        color: hsl(233, 8%, 62%)
     }
 
-    nav>button {
+    nav button {
         display: block;
-        width: 12%;
+        width: 13%;
         background-image: linear-gradient(135deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-        background-color: linear;
-        margin: 15px 0 15px 0;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px 10px 10px 10px;
-        font-size: 0.9rem;
+        margin: 15px 0 15px auto;
+        padding: 6px 0 6px 0;
+        font-size: 1rem;
         font-weight: 900;
         border: none;
         border-radius: 35px;
         color: hsl(0, 0%, 100%);
     }
-} */
+
+    nav button a {
+        color: hsl(0, 0%, 100%);
+    }
+
+    nav button:hover {
+        filter: brightness(150%);
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-content header {
+        font-size: 3.7rem;
+        font-weight: 300;
+        text-align: start;
+        width: 70%;
+        margin: 250px 0 40px 150px;
+        line-height: 4rem;
+        color: #333333;
+    }
+
+    .hero-content p {
+        width: 65%;
+        text-align: start;
+        margin: 0 0 0px 150px;
+        font-size: 1rem;
+        align-self: flex-start;
+        line-height: 1.7rem;
+        color: #808080;
+    }
+
+    .hero-button {
+        position: relative;
+
+    }
+
+    .hero-content button,
+    .end-footer button {
+
+        width: 30%;
+        background-image: linear-gradient(135deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        padding: 12px 20px 12px 20px;
+        font-size: 0.9rem;
+        border: none;
+        border-radius: 35px;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .hero-content button:hover,
+    .end-footer button:hover {
+        filter: brightness(150%);
+        cursor: pointer;
+    }
+
+    .hero-button button {
+        position: absolute;
+        left: 150px;
+    }
+
+
+    .hero-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+
+    .hero-image {
+        width: 100%;
+        background-image: url(images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 170%;
+        background-position-x: -50px;
+        background-position-y: -170px;
+        overflow: hidden;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin: 0;
+        display: block;
+        right: -120px;
+        top: -40px;
+        position: relative;
+        z-index: 5;
+        overflow-x: hidden;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: -140px 0 -100px 0;
+        position: relative;
+    }
+
+    .choose-bank {
+        width: 55%;
+        margin-left: 150px;
+    }
+
+    .choose-bank header h1 {
+        text-align: start;
+        font-size: 2.5rem;
+
+        width: 100%;
+    }
+
+    .choose-bank p {
+        width: 100%;
+        text-align: start;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .container-wrapper {
+        width: 77%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 150px;
+        margin-top: 10px;
+        column-gap: 20px;
+    }
+
+    .Online-Banking,
+    .Simple-Budgeting,
+    .Fast-Onboarding,
+    .Open-API {
+        width: 100%;
+        text-align: start;
+
+    }
+
+    .Online-Banking header,
+    .Simple-Budgeting header,
+    .Fast-Onboarding header,
+    .Open-API header {
+        font-size: 1.5rem;
+        margin-left: 0%;
+        color: #404040;
+    }
+
+    .wrapper {
+        display: grid;
+        width: 100%;
+        margin: 0;
+        background-color: hsl(0, 0%, 98%);
+
+    }
+
+    .wrapper header h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-top: 250px;
+        margin-bottom: 50px;
+        margin-left: 150px;
+        text-align: start;
+    }
+
+    .latest-article-content {
+        width: 77%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 150px;
+        margin-top: 10px;
+        column-gap: 30px;
+    }
+
+    .article-image img {
+        width: 100%;
+        height: 180px;
+        border-radius: .5rem .5rem 0 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .currency,
+    .restaurant,
+    .plane,
+    .confetti {
+        background-color: hsl(0, 0%, 100%);
+        color: #999999;
+    }
+
+    footer>section {
+        width: 30%;
+        display: grid;
+        padding-left: 50px;
+        margin-top: 60px;
+        align-self: flex-start;
+    }
+
+    footer section .logo svg {
+        margin: 0 0 20px 0;
+    }
+
+
+    footer .container {
+        width: 170px;
+        display: grid;
+        padding-top: 30px;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    footer .container svg {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    footer .container .icon:hover {
+        fill:     hsl(136, 65%, 51%)
+        ;
+        cursor: pointer;
+    }
+
+    .item1 {
+        grid-area: about-Us;
+    }
+
+    .item2 {
+        grid-area: contact;
+    }
+
+    .item3 {
+        grid-area: blog;
+    }
+
+    .item4 {
+        grid-area: careers;
+    }
+
+    .item5 {
+        grid-area: support;
+    }
+
+    .item6 {
+        grid-area: privacy;
+    }
+
+    footer .wrapper-link {
+        width: 30%;
+        margin: -155px 95px 20px 0;
+        display: grid;
+        grid-template-areas:
+            'about-Us careers '
+            'contact   support'
+            'blog privacy';
+        column-gap: 60px;
+        row-gap: 5px;
+    }
+
+    footer .wrapper-link a {
+        width: 70%;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: start;
+    }
+
+    footer .wrapper-link a:hover {
+        color:     hsl(136, 65%, 51%)
+        ;
+    }
+
+    .end-footer {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: -130px;
+        margin-bottom: 30px;
+        align-self: flex-end;
+    }
+
+    .end-footer button {
+        align-self: flex-end;
+        margin: 0 160px 0 0;
+    }
+
+    .end-footer p {
+        text-align: end;
+        margin: 30px 160px 40px 0;
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+}
