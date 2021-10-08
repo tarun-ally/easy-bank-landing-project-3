@@ -376,21 +376,28 @@ footer .wrapper-link a {
 
     nav #mylink {
         align-self: center;
-        padding: 10px 0 10px 0;
+        padding: 4px 0 10px 0;
         margin: auto 0 auto 0;
         display: flex;
+        top: 0;
+        left: 0;
+        position: relative;
+        height: 60px;
         width: 27%;
         justify-content: space-between;
+    }
+    nav #mylink a{
+        position: relative;
     }
     nav #mylink a:after {
         content: "";
         position: absolute;
-        
+        background-color: darkorchid;
         background-image: linear-gradient(135deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         height: 5px;
-        width: 0;
+        width: 0%;
         left: 0;
-        bottom: -21px;
+        bottom: -10px;
         
     
     }
